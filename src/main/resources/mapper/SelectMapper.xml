@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liuyeshennai.db.client.mini.mapper.SelectMapper">
+
+  <select id="select" resultType="java.util.Map">
+        ${sql}
+  </select>
+
+  <update id="initDb">
+    create table if not exists students
+    (
+      id   bigint      not null auto_increment primary key,
+      name varchar(50) not null,
+      age  int         not null
+      );
+    insert into students(id,name,age) values (1,'张',11);
+    insert into students(id,name,age) values (2,'王',12);
+    insert into students(id,name,age) values (3,'李',13);
+    insert into students(id,name,age) values (4,'赵',14);
+  </update>
+</mapper>
