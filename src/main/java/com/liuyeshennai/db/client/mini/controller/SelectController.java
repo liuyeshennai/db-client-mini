@@ -42,7 +42,6 @@ public class SelectController {
   @ResponseBody
   @PostMapping("/select")
   public List<Map<String, Object>> select(@RequestBody Map<String, String> dto) {
-    dto.get("");
     return mapper.select(dto.get("sql"));
   }
 

@@ -19,7 +19,7 @@ public interface SelectMapper {
   List<Map<String, Object>> select(@Param("sql") String sql);
 
   /**
-  * db init.
-  */
-  public void initDb();
+   * db init.
+   */
+  void initDb();
 }

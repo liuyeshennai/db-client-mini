@@ -4,7 +4,7 @@
 # 核心思想
 主要利用了js可以遍历所有元素属性名称的特性，因此可以动态展示所有字段。
 # 使用方法
-运行app后，直接访问根目录：<a href="[超链接地址](http://localhost:8080)">http://localhost:8080</a>，即可访问到查询页面。输入Auth认证信息（必填）以及查询Sql（例如select * from students limit 3）,点击查询即可返回结果：
+运行app后，直接访问根目录：<a href="[超链接地址](http://localhost:8080)">http://localhost:8080</a>，即可访问到查询页面。输入Auth认证信息（默认123456）以及查询Sql（例如select * from students limit 3）,点击查询即可返回结果：
 ![image](https://github.com/liuyeshennai/db-client-mini/assets/34265990/d24583b7-ccff-4159-a15d-33f70d0b605a)
 # 注意事项
 1. 注意补充认证信息，可以使用token，也可以用其他可靠认证方案，保证跳板app不会被恶意攻击。

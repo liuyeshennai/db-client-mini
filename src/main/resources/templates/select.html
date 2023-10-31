@@ -2,27 +2,21 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css"
-        href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
-  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" language="javascript"
-          src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-        rel="stylesheet">
-  <script
-      src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
   <style>
     #app {
       padding: 10px;
     }
-
     .el-form-item__content {
       line-height: 16px;
     }
-
     .table td, .table th {
       padding: 5px !important;
     }
@@ -47,7 +41,7 @@
     </el-form-item>
     <el-form-item>
       <el-button type="success" @click="onSubmit" size="small" round>查询</el-button>
-      <el-button @click="danger" size="small" round>重置</el-button>
+      <el-button type=danger @click="reset" size="small" round>重置</el-button>
     </el-form-item>
     <el-form-item label="Result">
       <div class="table-responsive out-tab">
