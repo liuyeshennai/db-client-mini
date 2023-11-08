@@ -1,23 +1,15 @@
 spring:
   datasource:
-    #\u914D\u7F6Eh2\u6570\u636E\u5E93\u7684\u8FDE\u63A5\u5730\u5740
-    # Embedded \u5D4C\u5165\u5F0F
-    # Remote (client/server) \u8FDC\u7A0B\u8FDE\u63A5
-    # In-Memory \u5185\u5B58
     url: jdbc:h2:mem:test
-    #\u914D\u7F6EJDBC Driver
     driver-class-name: org.h2.Driver
-    #\u914D\u7F6E\u6570\u636E\u5E93\u7528\u6237\u540D
     username: sa
-    #\u914D\u7F6E\u6570\u636E\u5E93\u5BC6\u7801
     # password: 123456
-    #\u8FDB\u884C\u8BE5\u914D\u7F6E\uFF0C\u7A0B\u5E8F\u5F00\u542F\u65F6\u5C31\u4F1A\u542F\u52A8h2 web consloe\u3002\u5F53\u7136\u8FD9\u662F\u9ED8\u8BA4\u7684\uFF0C\u5982\u679C\u4F60\u4E0D\u60F3\u5728\u542F\u52A8\u7A0B\u5E8F\u65F6\u542F\u52A8h2 web consloe\uFF0C\u90A3\u4E48\u5C31\u8BBE\u7F6E\u4E3Afalse\u3002
   h2:
     console:
       enabled: true
-      #\u8FDB\u884C\u8BE5\u914D\u7F6E\uFF0C\u4F60\u5C31\u53EF\u4EE5\u901A\u8FC7YOUR_URL/h2\u8BBF\u95EEh2 web consloe\u3002YOUR_URL\u662F\u4F60\u7A0B\u5E8F\u7684\u8BBF\u95EEURl\u3002\u9ED8\u8BA4\u4E3A/h2-console
+      #进行该配置，你就可以通过YOUR_URL/h2访问h2 web consloe。YOUR_URL是你程序的访问URl。默认为/h2-console
       path: /h2
-      # \u8FDB\u884C\u8BE5\u914D\u7F6E\u540E\uFF0Ch2 web consloe\u5C31\u53EF\u4EE5\u5728\u8FDC\u7A0B\u8BBF\u95EE\u4E86\u3002\u5426\u5219\u53EA\u80FD\u5728\u672C\u673A\u8BBF\u95EE\u3002
+      # 进行该配置后，h2 web consloe就可以在远程访问了。否则只能在本机访问。
       settings:
         web-allow-others: true
   thymeleaf:
